@@ -19,13 +19,13 @@ It samples a partition of size `n_train + n_test` from the non-exchangeable rand
 
 The function produces two plots showing the clusters' size trajectories and the frequencies of clusters of given size in log-log scale. The following plots are produced with `run_demo()`. 
 
-<img src="https://github.com/Joedb/microclust_rnd_part/blob/master/data_clustersize.png" height="500" />
-<img src="https://github.com/Joedb/microclust_rnd_part/blob/master/freqs_data.png" height="500" />
+<img src="https://github.com/Joedb/microclustering/blob/master/data_clustersize.png" height="500" />
+<img src="https://github.com/Joedb/microclustering/blob/master/freqs_data.png" height="500" />
 
 Sequential Monte Carlo with `num_particles` is adopted to find the MLE of `sigma` and `xi` using the first `n_train` points of the simulated partition. The SMC algorithm runs `n_smcruns` times on each point of a grid of the parameters' space: \{1,2,3\} for `xi` and `n_sigma` equidistant points in \[0,0.9\] for `sigma`. A plot of the log-likelihood estimates is produced.
 
-<img src="https://github.com/Joedb/microclust_rnd_part/blob/master/loglikelihood_smc_estim.png" height="500" />
+<img src="https://github.com/Joedb/microclustering/blob/master/loglikelihood_smc_estim.png" height="500" />
 
 The prediction step generates `n_pred` partitions of size `n_train + n_test` from the predictive distribution and plots the 95% credible intervals for frequencies of clusters of given size.
 
-<img src="https://github.com/Joedb/microclust_rnd_part/blob/master/freqs_prediction.png" height="500" />
+<img src="https://github.com/Joedb/microclustering/blob/master/freqs_prediction.png" height="500" />
