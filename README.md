@@ -29,3 +29,6 @@ Sequential Monte Carlo with `num_particles` is adopted to find the MLE of `sigma
 The prediction step generates `n_pred` partitions of size `n_train + n_test` from the predictive distribution and plots the 95% credible intervals for frequencies of clusters of given size.
 
 <img src="https://github.com/Joedb/microclustering/blob/master/freqs_prediction.png" height="500" />
+
+
+The unknown_partition folder contains the code to run smc on count data and unknown partition.
