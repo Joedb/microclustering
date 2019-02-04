@@ -30,5 +30,3 @@ The prediction step generates `n_pred` partitions of size `n_train + n_test` fro
 
 <img src="https://github.com/Joedb/microclustering/blob/master/freqs_prediction.png" height="500" />
 
-
-The unknown_partition folder contains the code to run smc on count data and unknown partition.
